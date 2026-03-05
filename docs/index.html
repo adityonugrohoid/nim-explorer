@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIM Explorer — Model Catalog</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --yellow: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+    --orange: #f0883e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+  header p { color: var(--text-dim); }
+
+  .stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .stat { text-align: center; }
+
+  .stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.6rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.95rem;
+    outline: none;
+  }
+
+  .search-box:focus { border-color: var(--accent); }
+  .search-box::placeholder { color: var(--text-dim); }
+
+  .filter-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .filter-btn:hover { border-color: var(--text-dim); color: var(--text); }
+  .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #000; font-weight: 600; }
+
+  .sort-select {
+    padding: 0.5rem 0.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .results-count { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem; }
+
+  .model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1rem;
+  }
+
+  .model-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.2rem;
+    transition: border-color 0.15s;
+  }
+
+  .model-card:hover { border-color: var(--accent); }
+
+  .model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.6rem;
+  }
+
+  .model-name { font-weight: 600; font-size: 0.95rem; color: var(--text); word-break: break-word; }
+  .model-org { font-size: 0.8rem; color: var(--text-dim); }
+
+  .model-status {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .status-available { background: rgba(63,185,80,0.15); color: var(--green); }
+  .status-timeout { background: rgba(210,153,34,0.15); color: var(--yellow); }
+  .status-error { background: rgba(248,81,73,0.15); color: var(--red); }
+  .status-not_found { background: rgba(139,148,158,0.15); color: var(--text-dim); }
+
+  .model-id {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    background: rgba(88,166,255,0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    word-break: break-all;
+  }
+
+  .model-id:hover { background: rgba(88,166,255,0.2); }
+  .model-id.copied { background: rgba(63,185,80,0.2); color: var(--green); }
+
+  .badges { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+
+  .badge { font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 10px; font-weight: 500; }
+  .badge-family { background: rgba(188,140,255,0.15); color: var(--purple); }
+  .badge-thinking { background: rgba(240,136,62,0.15); color: var(--orange); }
+  .badge-vision { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-coding { background: rgba(88,166,255,0.15); color: var(--accent); }
+  .badge-safety { background: rgba(248,81,73,0.15); color: var(--red); }
+  .badge-instruct { background: rgba(139,148,158,0.1); color: var(--text-dim); }
+
+  .model-fields { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.4rem; font-style: italic; }
+
+  .loading { text-align: center; padding: 4rem; color: var(--text-dim); }
+
+  .error-msg {
+    text-align: center;
+    padding: 2rem;
+    color: var(--red);
+    background: rgba(248,81,73,0.1);
+    border-radius: 8px;
+    display: none;
+  }
+
+  .empty-state { text-align: center; padding: 3rem; color: var(--text-dim); }
+
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>NIM Explorer</h1>
+    <p>Machine-readable catalog of Nvidia NIM LLM models</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls">
+    <input type="text" class="search-box" id="search" placeholder="Search models by name, ID, or organization...">
+    <select class="sort-select" id="sort">
+      <option value="name">Sort: Name</option>
+      <option value="org">Sort: Organization</option>
+      <option value="family">Sort: Family</option>
+      <option value="status">Sort: Status</option>
+    </select>
+  </div>
+
+  <div class="controls">
+    <div class="filter-group" id="status-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="available">Available</button>
+      <button class="filter-btn" data-filter="timeout">Timeout</button>
+      <button class="filter-btn" data-filter="not_found">Not Found</button>
+    </div>
+    <div class="filter-group" id="tag-filters"></div>
+  </div>
+
+  <div class="results-count" id="results-count"></div>
+  <div class="model-grid" id="grid"></div>
+
+  <div class="loading" id="loading">Loading catalog...</div>
+  <div class="error-msg" id="error"></div>
+
+  <footer>
+    <p>Built with <a href="https://github.com/adityonugrohoid/nim-explorer">NIM Explorer</a> &middot;
+    Data from <a href="https://build.nvidia.com">Nvidia NIM</a></p>
+  </footer>
+</div>
+
+<script>
+let catalog = null;
+let activeStatusFilter = 'all';
+let activeTagFilters = new Set();
+
+const TAG_CLASSES = {
+  thinking: 'badge-thinking',
+  vision: 'badge-vision',
+  coding: 'badge-coding',
+  safety: 'badge-safety',
+  instruct: 'badge-instruct',
+};
+
+const STATUS_CLASSES = {
+  available: 'status-available',
+  timeout: 'status-timeout',
+  not_found: 'status-not_found',
+};
+
+function esc(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.textContent;
+}
+
+async function init() {
+  try {
+    let resp;
+    try {
+      resp = await fetch('../models/catalog.json');
+      if (!resp.ok) throw new Error();
+    } catch {
+      resp = await fetch('./models/catalog.json');
+      if (!resp.ok) throw new Error();
+    }
+    catalog = await resp.json();
+    document.getElementById('loading').style.display = 'none';
+    renderStats();
+    renderTagFilters();
+    renderModels();
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    const errEl = document.getElementById('error');
+    errEl.style.display = 'block';
+    errEl.textContent = 'Failed to load catalog.json. Run: python scripts/build_catalog.py';
+  }
+}
+
+function renderStats() {
+  const models = catalog.models;
+  const available = models.filter(m => m.status === 'available').length;
+  const orgs = new Set(models.map(m => m.organization)).size;
+  const families = new Set(models.filter(m => m.family !== 'other').map(m => m.family)).size;
+
+  const container = document.getElementById('stats');
+  container.replaceChildren();
+
+  const items = [
+    [models.length, 'Total Listed'],
+    [available, 'Available'],
+    [orgs, 'Organizations'],
+    [families, 'Families'],
+    [catalog.metadata.last_updated, 'Last Probed'],
+  ];
+
+  items.forEach(([value, label]) => {
+    const stat = document.createElement('div');
+    stat.className = 'stat';
+    const val = document.createElement('div');
+    val.className = 'stat-value';
+    val.textContent = value;
+    const lab = document.createElement('div');
+    lab.className = 'stat-label';
+    lab.textContent = label;
+    stat.append(val, lab);
+    container.appendChild(stat);
+  });
+}
+
+function renderTagFilters() {
+  const tagCounts = {};
+  const interestingTags = ['thinking', 'coding', 'vision', 'safety', 'instruct'];
+  catalog.models.forEach(m => {
+    (m.tags || []).forEach(t => {
+      if (interestingTags.includes(t)) {
+        tagCounts[t] = (tagCounts[t] || 0) + 1;
+      }
+    });
+  });
+
+  const container = document.getElementById('tag-filters');
+  Object.entries(tagCounts)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([tag, count]) => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.tag = tag;
+      btn.textContent = tag + ' (' + count + ')';
+      btn.addEventListener('click', () => {
+        if (activeTagFilters.has(tag)) {
+          activeTagFilters.delete(tag);
+          btn.classList.remove('active');
+        } else {
+          activeTagFilters.add(tag);
+          btn.classList.add('active');
+        }
+        renderModels();
+      });
+      container.appendChild(btn);
+    });
+}
+
+function getFilteredModels() {
+  let models = catalog.models;
+  const query = document.getElementById('search').value.toLowerCase().trim();
+  const sort = document.getElementById('sort').value;
+
+  if (activeStatusFilter !== 'all') {
+    models = models.filter(m => m.status === activeStatusFilter);
+  }
+
+  if (activeTagFilters.size > 0) {
+    models = models.filter(m => {
+      const tags = new Set(m.tags || []);
+      return [...activeTagFilters].every(t => tags.has(t));
+    });
+  }
+
+  if (query) {
+    models = models.filter(m =>
+      m.id.toLowerCase().includes(query) ||
+      (m.organization || '').toLowerCase().includes(query) ||
+      (m.family || '').toLowerCase().includes(query) ||
+      (m.tags || []).some(t => t.toLowerCase().includes(query))
+    );
+  }
+
+  models = [...models].sort((a, b) => {
+    if (sort === 'name') return a.id.localeCompare(b.id);
+    if (sort === 'org') return (a.organization || '').localeCompare(b.organization || '') || a.id.localeCompare(b.id);
+    if (sort === 'family') return (a.family || '').localeCompare(b.family || '') || a.id.localeCompare(b.id);
+    if (sort === 'status') {
+      const order = { available: 0, timeout: 1, server_error: 2, error_400: 3, not_found: 4 };
+      return (order[a.status] ?? 9) - (order[b.status] ?? 9) || a.id.localeCompare(b.id);
+    }
+    return 0;
+  });
+
+  return models;
+}
+
+function createModelCard(m) {
+  const card = document.createElement('div');
+  card.className = 'model-card';
+
+  // Header
+  const header = document.createElement('div');
+  header.className = 'model-header';
+
+  const info = document.createElement('div');
+  const org = document.createElement('div');
+  org.className = 'model-org';
+  org.textContent = m.organization || 'unknown';
+  const name = document.createElement('div');
+  name.className = 'model-name';
+  name.textContent = m.id.split('/').pop();
+  info.append(org, name);
+
+  const status = document.createElement('span');
+  status.className = 'model-status ' + (STATUS_CLASSES[m.status] || 'status-error');
+  status.textContent = m.status;
+
+  header.append(info, status);
+
+  // Model ID (clickable)
+  const idEl = document.createElement('div');
+  idEl.className = 'model-id';
+  idEl.textContent = m.id;
+  idEl.title = 'Click to copy';
+  idEl.addEventListener('click', () => {
+    navigator.clipboard.writeText(m.id).then(() => {
+      idEl.classList.add('copied');
+      const orig = idEl.textContent;
+      idEl.textContent = 'Copied!';
+      setTimeout(() => { idEl.classList.remove('copied'); idEl.textContent = orig; }, 1000);
+    });
+  });
+
+  // Badges
+  const badges = document.createElement('div');
+  badges.className = 'badges';
+  (m.tags || []).forEach(t => {
+    const badge = document.createElement('span');
+    badge.className = 'badge ' + (TAG_CLASSES[t] || 'badge-family');
+    badge.textContent = t;
+    badges.appendChild(badge);
+  });
+
+  card.append(header, idEl, badges);
+
+  // Extra info for available models
+  const extras = [];
+  if (m.has_reasoning_content) extras.push('reasoning_content field');
+  if (m.has_tool_calls_field) extras.push('tool_calls field');
+  if (extras.length) {
+    const fields = document.createElement('div');
+    fields.className = 'model-fields';
+    fields.textContent = extras.join(' \u00B7 ');
+    card.appendChild(fields);
+  }
+
+  return card;
+}
+
+function renderModels() {
+  const models = getFilteredModels();
+  const grid = document.getElementById('grid');
+
+  document.getElementById('results-count').textContent =
+    'Showing ' + models.length + ' of ' + catalog.models.length + ' models';
+
+  grid.replaceChildren();
+
+  if (models.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.textContent = 'No models match your filters.';
+    grid.appendChild(empty);
+    return;
+  }
+
+  models.forEach(m => grid.appendChild(createModelCard(m)));
+}
+
+// Event listeners
+document.getElementById('search').addEventListener('input', renderModels);
+document.getElementById('sort').addEventListener('change', renderModels);
+
+document.getElementById('status-filters').addEventListener('click', e => {
+  if (!e.target.dataset.filter) return;
+  activeStatusFilter = e.target.dataset.filter;
+  document.querySelectorAll('#status-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  renderModels();
+});
+
+init();
+</script>
+</body>
+</html>

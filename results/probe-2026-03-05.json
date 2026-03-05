@@ -1,0 +1,3385 @@
+{
+  "01-ai/yi-large": {
+    "status": "not_found",
+    "http": 404
+  },
+  "abacusai/dracarys-llama-3.1-70b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "adept/fuyu-8b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ai21labs/jamba-1.5-large-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ai21labs/jamba-1.5-mini-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "aisingapore/sea-lion-7b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "baai/bge-m3": {
+    "status": "not_found",
+    "http": 404
+  },
+  "baichuan-inc/baichuan2-13b-chat": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": null,
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "bigcode/starcoder2-15b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "bigcode/starcoder2-7b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "bytedance/seed-oss-36b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "databricks/dbrx-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "deepseek-ai/deepseek-coder-6.7b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "deepseek-ai/deepseek-r1-distill-llama-8b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "deepseek-ai/deepseek-r1-distill-qwen-14b": {
+    "status": "server_error",
+    "http": 500
+  },
+  "deepseek-ai/deepseek-r1-distill-qwen-32b": {
+    "status": "server_error",
+    "http": 500
+  },
+  "deepseek-ai/deepseek-r1-distill-qwen-7b": {
+    "status": "server_error",
+    "http": 500
+  },
+  "deepseek-ai/deepseek-v3.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "deepseek-ai/deepseek-v3.1-terminus": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "deepseek-ai/deepseek-v3.2": {
+    "status": "timeout",
+    "http": null
+  },
+  "google/codegemma-1.1-7b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "google/codegemma-7b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "google/deplot": {
+    "status": "not_found",
+    "http": 404
+  },
+  "google/gemma-2-27b-it": {
+    "status": "timeout",
+    "http": null
+  },
+  "google/gemma-2-2b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "google/gemma-2-9b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/gemma-2b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "google/gemma-3-12b-it": {
+    "status": "timeout",
+    "http": null
+  },
+  "google/gemma-3-1b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/gemma-3-27b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/gemma-3-4b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "model",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "google/gemma-3n-e2b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/gemma-3n-e4b-it": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/gemma-7b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "google/paligemma": {
+    "status": "server_error",
+    "http": 500
+  },
+  "google/recurrentgemma-2b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "google/shieldgemma-9b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "gotocompany/gemma-2-9b-cpt-sahabatai-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "ibm/granite-3.0-3b-a800m-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ibm/granite-3.0-8b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ibm/granite-3.3-8b-instruct": {
+    "status": "timeout",
+    "http": null
+  },
+  "ibm/granite-34b-code-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ibm/granite-8b-code-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "ibm/granite-guardian-3.0-8b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "igenius/colosseum_355b_instruct_16k": {
+    "status": "timeout",
+    "http": null
+  },
+  "igenius/italia_10b_instruct_16k": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "institute-of-science-tokyo/llama-3.1-swallow-70b-instruct-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "institute-of-science-tokyo/llama-3.1-swallow-8b-instruct-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "marin/marin-8b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "mediatek/breeze-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": null,
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "meta/codellama-70b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "meta/llama-3.1-405b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama-3.1-70b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama-3.1-8b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "nvext",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "meta/llama-3.2-11b-vision-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama-3.2-1b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "meta/llama-3.2-3b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "meta/llama-3.2-90b-vision-instruct": {
+    "status": "timeout",
+    "http": null
+  },
+  "meta/llama-3.3-70b-instruct": {
+    "status": "timeout",
+    "http": null
+  },
+  "meta/llama-4-maverick-17b-128e-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama-4-scout-17b-16e-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "meta/llama-guard-4-12b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama2-70b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "meta/llama3-70b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "meta/llama3-8b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "microsoft/kosmos-2": {
+    "status": "not_found",
+    "http": 404
+  },
+  "microsoft/phi-3-medium-128k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-medium-4k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-mini-128k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-mini-4k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-small-128k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-small-8k-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3-vision-128k-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "microsoft/phi-3.5-mini-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-3.5-moe-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "microsoft/phi-3.5-vision-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "microsoft/phi-4-mini-flash-reasoning": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "microsoft/phi-4-mini-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "microsoft/phi-4-multimodal-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "minimaxai/minimax-m2.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "minimaxai/minimax-m2.5": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/codestral-22b-instruct-v0.1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "mistralai/devstral-2-123b-instruct-2512": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/magistral-small-2506": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mamba-codestral-7b-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "mistralai/mathstral-7b-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "mistralai/ministral-14b-instruct-2512": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-7b-instruct-v0.2": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-7b-instruct-v0.3": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-large": {
+    "status": "not_found",
+    "http": 404
+  },
+  "mistralai/mistral-large-2-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "mistralai/mistral-large-3-675b-instruct-2512": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-medium-3-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-nemotron": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mistral-small-24b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "mistralai/mistral-small-3.1-24b-instruct-2503": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mixtral-8x22b-instruct-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "mistralai/mixtral-8x22b-v0.1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "mistralai/mixtral-8x7b-instruct-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "moonshotai/kimi-k2-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "moonshotai/kimi-k2-instruct-0905": {
+    "status": "timeout",
+    "http": null
+  },
+  "moonshotai/kimi-k2-thinking": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "moonshotai/kimi-k2.5": {
+    "status": "timeout",
+    "http": null
+  },
+  "nv-mistralai/mistral-nemo-12b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/cosmos-reason2-8b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/embed-qa-4": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/gliner-pii": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/llama-3.1-nemoguard-8b-content-safety": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/llama-3.1-nemoguard-8b-topic-control": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/llama-3.1-nemotron-51b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.1-nemotron-70b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.1-nemotron-70b-reward": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/llama-3.1-nemotron-nano-4b-v1.1": {
+    "status": "timeout",
+    "http": null
+  },
+  "nvidia/llama-3.1-nemotron-nano-8b-v1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/llama-3.1-nemotron-nano-vl-8b-v1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/llama-3.1-nemotron-safety-guard-8b-v3": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.2-nemoretriever-300m-embed-v1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.2-nv-embedqa-1b-v1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.2-nv-embedqa-1b-v2": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-3.3-nemotron-super-49b-v1": {
+    "status": "timeout",
+    "http": null
+  },
+  "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/llama-nemotron-embed-1b-v2": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama-nemotron-embed-vl-1b-v2": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama3-chatqa-1.5-70b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/llama3-chatqa-1.5-8b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "id",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/mistral-nemo-minitron-8b-8k-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/mistral-nemo-minitron-8b-base": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nemoretriever-parse": {
+    "status": "error_400",
+    "http": 400,
+    "detail": "Content cannot be a plain string. The model does not support text input."
+  },
+  "nvidia/nemotron-3-nano-30b-a3b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "nvidia/nemotron-4-340b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nemotron-4-340b-reward": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nemotron-4-mini-hindi-4b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/nemotron-content-safety-reasoning-4b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/nemotron-mini-4b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/nemotron-nano-12b-v2-vl": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/nemotron-nano-3-30b-a3b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nemotron-parse": {
+    "status": "error_400",
+    "http": 400,
+    "detail": "Content cannot be a plain string. The model does not support text input. Content cannot be a plain string. The model does not support text input."
+  },
+  "nvidia/neva-22b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nv-embed-v1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nv-embedcode-7b-v1": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nv-embedqa-e5-v5": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nv-embedqa-mistral-7b-v2": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nvclip": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/nvidia-nemotron-nano-9b-v2": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "nvidia/riva-translate-4b-instruct": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/riva-translate-4b-instruct-v1.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "nvidia/streampetr": {
+    "status": "not_found",
+    "http": 404
+  },
+  "nvidia/usdcode-llama-3.1-70b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "completion_tokens_details",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "stop",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "nvidia/vila": {
+    "status": "not_found",
+    "http": 404
+  },
+  "openai/gpt-oss-120b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "openai/gpt-oss-20b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "opengpt-x/teuken-7b-instruct-commercial-v0.4": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "qwen/qwen2-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": null,
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "qwen/qwen2.5-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "qwen/qwen2.5-coder-32b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "qwen/qwen2.5-coder-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "qwen/qwen3-coder-480b-a35b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "qwen/qwen3-next-80b-a3b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "qwen/qwen3-next-80b-a3b-thinking": {
+    "status": "error_400",
+    "http": 400,
+    "detail": "{'status': 400, 'title': 'Bad Request', 'detail': \"Function id '0584c86b-1078-4c33-b94c-e64a5c032b13': DEGRADED function cannot be invoked\"}"
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "status": "timeout",
+    "http": null
+  },
+  "qwen/qwen3.5-397b-a17b": {
+    "status": "timeout",
+    "http": null
+  },
+  "qwen/qwq-32b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "rakuten/rakutenai-7b-chat": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": null,
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "rakuten/rakutenai-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": null,
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "sarvamai/sarvam-m": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "snowflake/arctic-embed-l": {
+    "status": "not_found",
+    "http": 404
+  },
+  "speakleash/bielik-11b-v2.3-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "speakleash/bielik-11b-v2.6-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "stepfun-ai/step-3.5-flash": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "stockmark/stockmark-2-100b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "prompt_token_ids",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "thudm/chatglm3-6b": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "kv_transfer_params",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "message_fields": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "tiiuae/falcon3-7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "tokyotech-llm/llama-3-swallow-70b-instruct-v0.1": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": true
+  },
+  "upstage/solar-10.7b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "utter-project/eurollm-9b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "prompt_logprobs",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "writer/palmyra-creative-122b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "writer/palmyra-fin-70b-32k": {
+    "status": "not_found",
+    "http": 404
+  },
+  "writer/palmyra-med-70b": {
+    "status": "not_found",
+    "http": 404
+  },
+  "writer/palmyra-med-70b-32k": {
+    "status": "not_found",
+    "http": 404
+  },
+  "yentinglin/llama-3-taiwan-70b-instruct": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "role"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": false,
+    "has_tool_calls_field": false
+  },
+  "z-ai/glm4.7": {
+    "status": "available",
+    "http": 200,
+    "response_fields": [
+      "choices",
+      "created",
+      "id",
+      "metadata",
+      "model",
+      "object",
+      "usage"
+    ],
+    "message_fields": [
+      "content",
+      "reasoning_content",
+      "role",
+      "tool_calls"
+    ],
+    "usage_fields": [
+      "completion_tokens",
+      "prompt_tokens",
+      "prompt_tokens_details",
+      "reasoning_tokens",
+      "total_tokens"
+    ],
+    "finish_reason": "length",
+    "has_reasoning_content": true,
+    "has_tool_calls_field": true
+  },
+  "z-ai/glm5": {
+    "status": "timeout",
+    "http": null
+  },
+  "zyphra/zamba2-7b-instruct": {
+    "status": "not_found",
+    "http": 404
+  }
+}

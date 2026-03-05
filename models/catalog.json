@@ -1,0 +1,4359 @@
+{
+  "metadata": {
+    "provider": "nvidia-nim",
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "last_updated": "2026-03-05",
+    "total_listed": 185,
+    "total_available": 104,
+    "total_timeout": 14,
+    "probe_timeout_seconds": 25.0
+  },
+  "models": [
+    {
+      "id": "01-ai/yi-large",
+      "organization": "01-ai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "abacusai/dracarys-llama-3.1-70b-instruct",
+      "organization": "abacusai",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "adept/fuyu-8b",
+      "organization": "adept",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ai21labs/jamba-1.5-large-instruct",
+      "organization": "ai21labs",
+      "family": "jamba",
+      "tags": [
+        "instruct",
+        "jamba"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ai21labs/jamba-1.5-mini-instruct",
+      "organization": "ai21labs",
+      "family": "jamba",
+      "tags": [
+        "instruct",
+        "jamba"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "aisingapore/sea-lion-7b-instruct",
+      "organization": "aisingapore",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "baai/bge-m3",
+      "organization": "baai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "baichuan-inc/baichuan2-13b-chat",
+      "organization": "baichuan-inc",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "bigcode/starcoder2-15b",
+      "organization": "bigcode",
+      "family": "starcoder",
+      "tags": [
+        "coding",
+        "starcoder"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "bigcode/starcoder2-7b",
+      "organization": "bigcode",
+      "family": "starcoder",
+      "tags": [
+        "coding",
+        "starcoder"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "bytedance/seed-oss-36b-instruct",
+      "organization": "bytedance",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "databricks/dbrx-instruct",
+      "organization": "databricks",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "organization": "deepseek-ai",
+      "family": "deepseek",
+      "tags": [
+        "coding",
+        "deepseek",
+        "instruct"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-llama-8b",
+      "organization": "deepseek-ai",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "thinking"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-14b",
+      "organization": "deepseek-ai",
+      "family": "qwen",
+      "tags": [
+        "qwen",
+        "thinking"
+      ],
+      "status": "server_error"
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "organization": "deepseek-ai",
+      "family": "qwen",
+      "tags": [
+        "qwen",
+        "thinking"
+      ],
+      "status": "server_error"
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-7b",
+      "organization": "deepseek-ai",
+      "family": "qwen",
+      "tags": [
+        "qwen",
+        "thinking"
+      ],
+      "status": "server_error"
+    },
+    {
+      "id": "deepseek-ai/deepseek-v3.1",
+      "organization": "deepseek-ai",
+      "family": "deepseek",
+      "tags": [
+        "deepseek"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "deepseek-ai/deepseek-v3.1-terminus",
+      "organization": "deepseek-ai",
+      "family": "deepseek",
+      "tags": [
+        "deepseek"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "deepseek-ai/deepseek-v3.2",
+      "organization": "deepseek-ai",
+      "family": "deepseek",
+      "tags": [
+        "deepseek"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "google/codegemma-1.1-7b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "google/codegemma-7b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "google/deplot",
+      "organization": "google",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "google/gemma-2-2b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/gemma-2b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "google/gemma-3-1b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/gemma-3-4b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "model",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "google/gemma-3n-e2b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/gemma-7b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "google/paligemma",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "server_error"
+    },
+    {
+      "id": "google/recurrentgemma-2b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "google/shieldgemma-9b",
+      "organization": "google",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "gotocompany/gemma-2-9b-cpt-sahabatai-instruct",
+      "organization": "gotocompany",
+      "family": "gemma",
+      "tags": [
+        "gemma",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "ibm/granite-3.0-3b-a800m-instruct",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "instruct"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ibm/granite-3.0-8b-instruct",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "instruct"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ibm/granite-3.3-8b-instruct",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "instruct"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "ibm/granite-34b-code-instruct",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "instruct"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ibm/granite-8b-code-instruct",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "instruct"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "ibm/granite-guardian-3.0-8b",
+      "organization": "ibm",
+      "family": "granite",
+      "tags": [
+        "granite",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "igenius/colosseum_355b_instruct_16k",
+      "organization": "igenius",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "igenius/italia_10b_instruct_16k",
+      "organization": "igenius",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "institute-of-science-tokyo/llama-3.1-swallow-70b-instruct-v0.1",
+      "organization": "institute-of-science-tokyo",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "institute-of-science-tokyo/llama-3.1-swallow-8b-instruct-v0.1",
+      "organization": "institute-of-science-tokyo",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "marin/marin-8b-instruct",
+      "organization": "marin",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "mediatek/breeze-7b-instruct",
+      "organization": "mediatek",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "meta/codellama-70b",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "meta/llama-3.1-405b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama-3.1-70b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama-3.1-8b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "nvext",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "meta/llama-3.2-11b-vision-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama",
+        "vision"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama-3.2-1b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "meta/llama-3.2-3b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "meta/llama-3.2-90b-vision-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama",
+        "vision"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "meta/llama-3.3-70b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "meta/llama-4-maverick-17b-128e-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama-4-scout-17b-16e-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "meta/llama-guard-4-12b",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama2-70b",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "meta/llama3-70b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "meta/llama3-8b-instruct",
+      "organization": "meta",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "microsoft/kosmos-2",
+      "organization": "microsoft",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "microsoft/phi-3-medium-128k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-medium-4k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-mini-128k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-mini-4k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-small-128k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-small-8k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3-vision-128k-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi",
+        "vision"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "microsoft/phi-3.5-mini-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-3.5-moe-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "microsoft/phi-3.5-vision-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi",
+        "vision"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "microsoft/phi-4-mini-flash-reasoning",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "phi",
+        "thinking"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "microsoft/phi-4-mini-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "microsoft/phi-4-multimodal-instruct",
+      "organization": "microsoft",
+      "family": "phi",
+      "tags": [
+        "instruct",
+        "phi",
+        "vision"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "minimaxai/minimax-m2.1",
+      "organization": "minimaxai",
+      "family": "minimax",
+      "tags": [
+        "minimax"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "minimaxai/minimax-m2.5",
+      "organization": "minimaxai",
+      "family": "minimax",
+      "tags": [
+        "minimax"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/codestral-22b-instruct-v0.1",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "coding",
+        "instruct",
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "mistralai/devstral-2-123b-instruct-2512",
+      "organization": "mistralai",
+      "family": "other",
+      "tags": [
+        "coding",
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/magistral-small-2506",
+      "organization": "mistralai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mamba-codestral-7b-v0.1",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "coding",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "mistralai/mathstral-7b-v0.1",
+      "organization": "mistralai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "mistralai/ministral-14b-instruct-2512",
+      "organization": "mistralai",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.2",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-large",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "mistralai/mistral-large-2-instruct",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "mistralai/mistral-large-3-675b-instruct-2512",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-medium-3-instruct",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-nemotron",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct-2503",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct-v0.1",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-v0.1",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct-v0.1",
+      "organization": "mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "moonshotai/kimi-k2-instruct",
+      "organization": "moonshotai",
+      "family": "kimi",
+      "tags": [
+        "instruct",
+        "kimi"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "moonshotai/kimi-k2-instruct-0905",
+      "organization": "moonshotai",
+      "family": "kimi",
+      "tags": [
+        "instruct",
+        "kimi"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "organization": "moonshotai",
+      "family": "kimi",
+      "tags": [
+        "kimi",
+        "thinking"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "moonshotai/kimi-k2.5",
+      "organization": "moonshotai",
+      "family": "kimi",
+      "tags": [
+        "kimi"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "nv-mistralai/mistral-nemo-12b-instruct",
+      "organization": "nv-mistralai",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/cosmos-reason2-8b",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/embed-qa-4",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/gliner-pii",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-51b-instruct",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-reward",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-nano-4b-v1.1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-nano-8b-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "vision"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama",
+        "safety"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama",
+        "vision"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.2-nemoretriever-300m-embed-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.2-nv-embedqa-1b-v2",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/llama-nemotron-embed-1b-v2",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "embedding",
+        "llama",
+        "vision"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama3-chatqa-1.5-70b",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/llama3-chatqa-1.5-8b",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "id",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "organization": "nvidia",
+      "family": "mistral",
+      "tags": [
+        "instruct",
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/mistral-nemo-minitron-8b-base",
+      "organization": "nvidia",
+      "family": "mistral",
+      "tags": [
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nemoretriever-parse",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "error_400"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/nemotron-4-340b-instruct",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "instruct",
+        "nemotron"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nemotron-4-340b-reward",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nemotron-4-mini-hindi-4b-instruct",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "instruct",
+        "nemotron"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/nemotron-content-safety-reasoning-4b",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron",
+        "safety",
+        "thinking"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/nemotron-mini-4b-instruct",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "instruct",
+        "nemotron"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron",
+        "vision"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/nemotron-nano-3-30b-a3b",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nemotron-parse",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron"
+      ],
+      "status": "error_400"
+    },
+    {
+      "id": "nvidia/neva-22b",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nv-embed-v1",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nv-embedcode-7b-v1",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nv-embedqa-e5-v5",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nv-embedqa-mistral-7b-v2",
+      "organization": "nvidia",
+      "family": "mistral",
+      "tags": [
+        "embedding",
+        "mistral"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nvclip",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/nvidia-nemotron-nano-9b-v2",
+      "organization": "nvidia",
+      "family": "nemotron",
+      "tags": [
+        "nemotron"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/riva-translate-4b-instruct",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/riva-translate-4b-instruct-v1.1",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "nvidia/streampetr",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "nvidia/usdcode-llama-3.1-70b-instruct",
+      "organization": "nvidia",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "nvidia/vila",
+      "organization": "nvidia",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "organization": "openai",
+      "family": "gpt-oss",
+      "tags": [
+        "gpt-oss"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "organization": "openai",
+      "family": "gpt-oss",
+      "tags": [
+        "gpt-oss"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "opengpt-x/teuken-7b-instruct-commercial-v0.4",
+      "organization": "opengpt-x",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "qwen/qwen2-7b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "qwen/qwen2.5-7b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "qwen/qwen2.5-coder-32b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "coding",
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "qwen/qwen2.5-coder-7b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "coding",
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "qwen/qwen3-coder-480b-a35b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "coding",
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "instruct",
+        "qwen"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "qwen",
+        "thinking"
+      ],
+      "status": "error_400"
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "qwen"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "organization": "qwen",
+      "family": "qwen",
+      "tags": [
+        "qwen"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "qwen/qwq-32b",
+      "organization": "qwen",
+      "family": "other",
+      "tags": [
+        "other",
+        "thinking"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "rakuten/rakutenai-7b-chat",
+      "organization": "rakuten",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "rakuten/rakutenai-7b-instruct",
+      "organization": "rakuten",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "sarvamai/sarvam-m",
+      "organization": "sarvamai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "snowflake/arctic-embed-l",
+      "organization": "snowflake",
+      "family": "other",
+      "tags": [
+        "embedding",
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "speakleash/bielik-11b-v2.3-instruct",
+      "organization": "speakleash",
+      "family": "bielik",
+      "tags": [
+        "bielik",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "speakleash/bielik-11b-v2.6-instruct",
+      "organization": "speakleash",
+      "family": "bielik",
+      "tags": [
+        "bielik",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "stepfun-ai/step-3.5-flash",
+      "organization": "stepfun-ai",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "stockmark/stockmark-2-100b-instruct",
+      "organization": "stockmark",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "prompt_token_ids",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "thudm/chatglm3-6b",
+      "organization": "thudm",
+      "family": "glm",
+      "tags": [
+        "glm",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "kv_transfer_params",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "message_fields": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "tiiuae/falcon3-7b-instruct",
+      "organization": "tiiuae",
+      "family": "falcon",
+      "tags": [
+        "falcon",
+        "instruct"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "tokyotech-llm/llama-3-swallow-70b-instruct-v0.1",
+      "organization": "tokyotech-llm",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "upstage/solar-10.7b-instruct",
+      "organization": "upstage",
+      "family": "solar",
+      "tags": [
+        "instruct",
+        "solar"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "utter-project/eurollm-9b-instruct",
+      "organization": "utter-project",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "prompt_logprobs",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "writer/palmyra-creative-122b",
+      "organization": "writer",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "writer/palmyra-fin-70b-32k",
+      "organization": "writer",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "writer/palmyra-med-70b",
+      "organization": "writer",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "writer/palmyra-med-70b-32k",
+      "organization": "writer",
+      "family": "other",
+      "tags": [
+        "other"
+      ],
+      "status": "not_found"
+    },
+    {
+      "id": "yentinglin/llama-3-taiwan-70b-instruct",
+      "organization": "yentinglin",
+      "family": "llama",
+      "tags": [
+        "instruct",
+        "llama"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "role"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": false,
+      "has_tool_calls_field": false
+    },
+    {
+      "id": "z-ai/glm4.7",
+      "organization": "z-ai",
+      "family": "glm",
+      "tags": [
+        "glm"
+      ],
+      "status": "available",
+      "response_fields": [
+        "choices",
+        "created",
+        "id",
+        "metadata",
+        "model",
+        "object",
+        "usage"
+      ],
+      "message_fields": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "usage_fields": [
+        "completion_tokens",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "reasoning_tokens",
+        "total_tokens"
+      ],
+      "has_reasoning_content": true,
+      "has_tool_calls_field": true
+    },
+    {
+      "id": "z-ai/glm5",
+      "organization": "z-ai",
+      "family": "glm",
+      "tags": [
+        "glm"
+      ],
+      "status": "timeout"
+    },
+    {
+      "id": "zyphra/zamba2-7b-instruct",
+      "organization": "zyphra",
+      "family": "other",
+      "tags": [
+        "instruct",
+        "other"
+      ],
+      "status": "not_found"
+    }
+  ]
+}
